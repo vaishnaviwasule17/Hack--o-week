@@ -1,0 +1,33 @@
+Q.1>Code for portfolio of student.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+</head>
+<body>
+
+  <h1>Vaishnavi Wasule</h1>
+  <h3>Computer Science student</h3>
+
+  <hr>
+
+  <h2>About Me</h2>
+  <p>
+  I am a student at symbiosis intitute of technology.I am in B TECH CSE course .  <hr>
+
+  <h2>Projects</h2>
+  <ul>
+    <li>My First Website in hack o week</li>
+    
+      </ul>
+
+  <hr>
+
+  <h2>Contact</h2>
+  <p>Email: vaishnavi.wasule.batch2025@sitnagpur.siu.edu.in</p>
+  <p>Phone: 108-099-787</p>
+
+</body>
+</html>
