@@ -1,0 +1,78 @@
+Q.1> Code for making website for menu of restaurant.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Menu</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .menu {
+      max-width: 700px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      text-align: center;
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+    }
+
+    .item span {
+      font-size: 15px;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <h1><B>BOSCO<B></h1>
+        <h2>Starters</h2>
+    <div class="item"><span>Garlic Bread</span><span class="price">Rs 100</span></div>
+    <div class="item"><span>Soup </span><span class="price">Rs 300</span></div>
+    <div class="item"><span> Salad</span><span class="price">Rs 250</span></div>
+
+    <h2>Mains</h2>
+    <div class="item"><span>Classic Burger </span><span class="price">Rs 320</span></div>
+    <div class="item"><span>Grilled sandwich</span><span class="price">Rs 450</span></div>
+    <div class="item"><span>Pasta </span><span class="price">Rs 390</span></div>
+    <div class="item"><span>Noodles</span><span class="price">Rs 567</span></div>
+
+    <h2>Sides</h2>
+    <div class="item"><span>French Fries</span><s
