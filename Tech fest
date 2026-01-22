@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNova 2026 | College Tech Fest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0a0f1c;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background: rgba(0,0,0,0.6);
+            padding: 15px 50px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #00e5ff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #00e5ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(to right, #020024, #090979, #00d4ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        .hero a {
+            background: #00e5ff;
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero a:hover {
+            background: #00bcd4;
+        }
+
+        section {
+            padding: 80px 50px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #00e5ff;
+        }
+
+        /* Events */
+        .events {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .event-card {
+            background: #12182b;
+            padding: 25px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .event-card h3 {
+            color: #00e5ff;
+            margin-bottom: 10px;
+        }
+
+        /* Schedule */
+        .schedule {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .schedule-item {
+            background: #12182b;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #00e5ff;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer span {
+            color: #00e5ff;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            header {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>TechNova</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>TechNova 2026</h1>
+        <p>The Ultimate College Technical Fest</p>
+        <a href="#events">Explore Events</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-title">
+        <h2>About The Fest</h2>
+    </div>
+    <p style="max-width:800px; margin:auto; text-align:center;">
+        TechNova is our annual college technical festival celebrating innovation,
+        creativity, and technology. Join us for exciting competitions, workshops,
+        and talks by industry experts.
+    </p>
+</section>
+
+<section id="events">
+    <div class="section-title">
+        <h2>Events</h2>
+    </div>
+
+    <div class="events">
+        <div class="event-card">
+            <h3>Hackathon</h3>
+            <p>24-hour coding challenge to solve real-world problems.</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Robotics</h3>
+            <p>Design and compete with autonomous robots.</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Paper Presentation</h3>
+            <p>Showcase your research and innovative ideas.</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Gaming Arena</h3>
+            <p>Compete in high-intensity esports tournaments.</p>
+        </div>
+    </div>
+</section>
+
+<section id="schedule">
+    <div class="section-title">
+        <h2>Schedule</h2>
+    </div>
+
+    <div class="schedule">
+        <div class="schedule-item">
+            <strong>Day 1:</strong> Inauguration & Hackathon
+        </div>
+        <div class="schedule-item">
+            <strong>Day 2:</strong> Workshops & Paper Presentation
+        </div>
+        <div class="schedule-item">
+            <strong>Day 3:</strong> Robotics Finals & Valedictory
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+
+    <p style="text-align:center;">
+        Email: technova@college.edu <br>
+        Phone: +91 98765 43210
+    </p>
+</section>
+
+<footer>
+    © 2026 <span>TechNova</span> | College Technical Fest
+</footer>
+
+</body>
+</html>
