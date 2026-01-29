@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Shopping Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .search-box {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .search-box input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product p {
+            color: green;
+            font-weight: bold;
+        }
+
+        .product button {
+            padding: 8px 15px;
+            border: none;
+            background-color: #ff9800;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .product button:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Online Shop</h1>
+    <p>Search and buy products</p>
+</header>
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search for products..." onkeyup="searchProduct()">
+</div>
+
+<div class="products" id="productList">
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>Rs.80000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Mobile Phone">
+        <h3>Mobile Phone</h3>
+        <p>Rs.26000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>Rs.1000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>Rs.1500</p>
+        <button>Buy Now</button>
+</div>
+
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="TV">
+        <h3>TV</h3>
+        <p>Rs.50000</p>
+        <button>Buy Now</button>
+</div>
+
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Microwave">
+        <h3>Microwave</h3>
+        <p>Rs.36000</p>
+        <button>Buy Now</button>
+</div>
+
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Refrigerator">
+        <h3>Refrigerator</h3>
+        <p>Rs.42000</p>
+        <button>Buy Now</button>
+</div>
+
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="AC">
+        <h3>AC</h3>
+        <p>Rs.70000</p>
+        <button>Buy Now</button>
+</div>
+
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Toaster">
+        <h3>Toaster</h3>
+        <p>Rs.1500</p>
+        <button>Buy Now</button>
+</div>
+
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Printer">
+        <h3>Printer</h3>
+        <p>Rs.20000</p>
+        <button>Buy Now</button>
+</div>
+
+
+
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Coffee Maker">
+        <h3>Coffee Maker</h3>
+        <p>Rs.2000</p>
+        <button>Buy Now</button>
+</div>
+
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Grill">
+        <h3>Grill</h3>
+        <p>Rs.1500</p>
+        <button>Buy Now</button>
+</div>
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Vacuum Cleaner">
+        <h3>Vacuum Cleaner</h3>
+        <p>Rs.3000</p>
+        <button>Buy Now</button>
+    </div>
+<div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Washing Machine">
+        <h3>Washing Machine</h3>
+        <p>Rs.30000</p>
+        <button>Buy Now</button>
+
+</div>
+<div class="product">
+    <img src="https://via.placeholder.com/300x200" alt="Flower Vase">
+    <h3>Flower Vase</h3>
+    <p>Rs.1200</p>
+    <button>Buy Now</button>
+</div>
+
+<div class="product">
+    <img src="https://via.placeholder.com/300x200" alt="Wall Painting">
+    <h3>Wall Painting</h3>
+    <p>Rs.3500</p>
+    <button>Buy Now</button>
+</div>
+
+<div class="product">
+    <img src="https://via.placeholder.com/300x200" alt="Table Lamp">
+    <h3>Decorative Table Lamp</h3>
+    <p>Rs.2800</p>
+    <button>Buy Now</button>
+</div>
+
+<div class="product">
+    <img src="https://via.placeholder.com/300x200" alt="Wall Clock">
+    <h3>Designer Wall Clock</h3>
+    <p>Rs.2200</p>
+    <button>Buy Now</button>
+</div>
+
+
+<script>
+    function searchProduct() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let products = document.getElementsByClassName("product");
+
+        for (let i = 0; i < products.length; i++) {
+            let productName = products[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+            products[i].style.display = productName.includes(input) ? "" : "none";
+        }
+    }
+</script>
+
+</body>
+</html>
