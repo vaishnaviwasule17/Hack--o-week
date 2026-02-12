@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Agent Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+    }
+
+    .agent-box {
+      background: #fff;
+      width: 400px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #4338ca;
+    }
+
+    .output {
+      margin-top: 15px;
+      background: #f1f5f9;
+      padding: 10px;
+      border-radius: 5px;
+      min-height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="agent-box">
+    <h2>AI Agent</h2>
+
+    <textarea id="userInput" placeholder="Enter your goal..."></textarea>
+
+    <button onclick="runAgent()">Run Agent</button>
+
+    <div class="output" id="output"></div>
+  </div>
+
+  <script>
+    function runAgent() {
+      const input = document.getElementById("userInput").value;
+      const output = document.getElementById("output");
+
+      if (!input) {
+        output.innerHTML = "Please enter a goal.";
+        return;
+      }
+
+      // Simulated agent thinking
+      output.innerHTML = "🤖 Agent thinking...";
+
+      setTimeout(() => {
+        output.innerHTML = `
+          <strong>Goal:</strong> ${input}<br><br>
+          <strong>Agent Plan:</strong><br>
+          1. Understand the request<br>
+          2. Decide actions<br>
+          3. Generate response<br><br>
+          ✅ Task completed!
+        `;
+      }, 1000);
+    }
+  </script>
+
+</body>
+</html>
