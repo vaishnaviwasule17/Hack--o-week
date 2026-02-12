@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Journey Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 0;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        ul li a:hover {
+            color: #f39c12;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="#" class="logo">Journey</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destination">Destinations</a></li>
+            <li><a href="#travel">Travel Tips</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home">
+    <h2>Home - Nagpur</h2>
+    <p>Nagpur is a beautiful city located in Maharashtra and is known as the Orange City of India. It is centrally located and well connected by road, rail, and air. From Nagpur, travelers can easily plan a journey to northern destinations like Kashmir.</p>
+</section>
+
+<section id="destination">
+    <h2>Destination - Kashmir</h2>
+    <p>Kashmir is one of the most beautiful destinations in India. Known as "Paradise on Earth", it is famous for snow-covered mountains, valleys, Dal Lake, Mughal gardens, and wooden houseboats. Popular tourist places include Srinagar, Gulmarg, Pahalgam, and Sonmarg.</p>
+</section>
+
+<section id="travel">
+    <h2>Detailed Travel Journey to Kashmir</h2>
+    
+    <h3>✈ Travel by Plane (Fastest Option)</h3>
+    <p>You can take a flight from Nagpur to Srinagar International Airport. There are connecting flights via Delhi or Mumbai. The total travel time is approximately 4–6 hours. It is recommended to book tickets in advance for better prices.</p>
+
+    <h3>🚆 Travel by Train</h3>
+    <p>You can travel by train from Nagpur to Jammu Tawi Railway Station. From Jammu, you can take a taxi or bus to Srinagar (approx. 8–10 hours by road).</p>
+
+    <h3>🚌 Travel by Road</h3>
+    <p>Road travel from Jammu to Srinagar offers breathtaking mountain views. The journey passes through tunnels and valleys, making it a scenic experience.</p>
+
+    <h3>🗓 Best Time to Visit</h3>
+    <p>March to October is ideal for sightseeing and pleasant weather. December to February is best if you want to experience snowfall.</p>
+
+    <h3>💰 Estimated Budget</h3>
+    <p>A 4–5 day trip may cost approximately ₹15,000–₹30,000 per person depending on travel, hotel, and activities.</p>
+</section>
+
+<section id="gallery">
+    <h2>Gallery - Beautiful Kashmir</h2>
+    <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Dal_Lake%2C_Srinagar.jpg" alt="Dal Lake">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Gulmarg_in_Winter.jpg" alt="Gulmarg Snow">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Pahalgam_Valley.jpg" alt="Pahalgam Valley">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Mughal_Garden_Srinagar.jpg" alt="Mughal Garden">
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Kashmir</h2>
+    <p>Kashmir is located in the northern part of India. It is known for its breathtaking natural beauty, pleasant climate, traditional handicrafts, Kashmiri shawls, and delicious cuisine like Rogan Josh and Kahwa tea. Tourists enjoy shikara rides on Dal Lake, trekking in the mountains, skiing in Gulmarg, and exploring scenic valleys.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>For more information about the journey, contact us at:</p>
+    <p><strong>Phone:</strong> +91 9876543210</p>
+    <p><strong>Email:</strong> journeyblog@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Journey Blog | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
