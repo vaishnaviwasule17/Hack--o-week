@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Weather Report</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #36d1dc, #5b86e5);
+        text-align: center;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    input, button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    button {
+        background: #fff;
+        color: #333;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #f1f1f1;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .box {
+        background: rgba(0,0,0,0.3);
+        padding: 20px;
+        margin: 15px;
+        border-radius: 10px;
+        width: 220px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>🌦️ 3-Day Weather Report</h1>
+
+<input type="text" id="cityInput" placeholder="Enter city name">
+<button onclick="updateCity()">Show Weather</button>
+<br>
+<button onclick="toggleTemp()">Switch to °F</button>
+
+<div class="container" id="weatherContainer">
+
+    <div class="box">
+        <h2>Yesterday</h2>
+        <div class="icon">☀️</div>
+        <p><strong>Date:</strong> 8 April 2026</p>
+        <p class="temp" data-c="34">34°C</p>
+        <p><strong>Condition:</strong> Sunny</p>
+        <p><strong>Humidity:</strong> 45%</p>
+    </div>
+
+    <div class="box">
+        <h2>Today</h2>
+        <div class="icon">⛅</div>
+        <p><strong>Date:</strong> 9 April 2026</p>
+        <p class="temp" data-c="36">36°C</p>
+        <p><strong>Condition:</strong> Partly Cloudy</p>
+        <p><strong>Humidity:</strong> 50%</p>
+    </div>
+
+    <div class="box">
+        <h2>Tomorrow</h2>
+        <div class="icon">☁️</div>
+        <p><strong>Date:</strong> 10 April 2026</p>
+        <p class="temp" data-c="35">35°C</p>
+        <p><strong>Condition:</strong> Cloudy</p>
+        <p><strong>Humidity:</strong> 55%</p>
+    </div>
+
+</div>
+
+<script>
+let isCelsius = true;
+
+function toggleTemp() {
+    const temps = document.querySelectorAll(".temp");
+    const button = document.querySelectorAll("button")[1];
+
+    temps.forEach(temp => {
+        let c = parseFloat(temp.getAttribute("data-c"));
+
+        if (isCelsius) {
+            let f = (c * 9/5) + 32;
+            temp.innerHTML = f.toFixed(1) + "°F";
+        } else {
+            temp.innerHTML = c + "°C";
+        }
+    });
+
+    isCelsius = !isCelsius;
+    button.innerText = isCelsius ? "Switch to °F" : "Switch to °C";
+}
+
+// Update city name
+function updateCity() {
+    const city = document.getElementById("cityInput").value.trim();
+    if (!city) {
+        alert("Please enter a city name!");
+        return;
+    }
+
+    const boxes = document.querySelectorAll(".box");
+    boxes.forEach(box => {
+        box.querySelector("h2").innerText = box.querySelector("h2").innerText; // Keep the day
+        let cityLine = box.querySelector(".city");
+        if (!cityLine) {
+            cityLine = document.createElement("p");
+            cityLine.classList.add("city");
+            box.insertBefore(cityLine, box.querySelector(".temp"));
+        }
+        cityLine.innerHTML = `<strong>City:</strong> ${city}`;
+    });
+}
+</script>
+
+</body>
+</html>
