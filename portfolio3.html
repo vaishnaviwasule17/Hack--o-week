@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaishnavi Wasule | Creative Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ffd5;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  background: linear-gradient(90deg, #00ffd5, #ff7eb3);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(90deg, #00ffd5, #ff7eb3);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* SECTIONS */
+section {
+  padding: 60px;
+}
+
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 30px;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card::after {
+  content: "View Project";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: #00ffd5;
+  color: #000;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.card:hover::after {
+  bottom: 0;
+}
+
+/* CONTACT */
+.contact p {
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+/* ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Vaishnavi</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Hello, I'm Vaishnavi 👩‍💻</h2>
+  <p id="typing"></p>
+  <button class="btn" onclick="scrollToSection()">Explore My Work</button>
+</div>
+
+<section id="about" class="glass fade-in">
+  <h3>About Me</h3>
+  <p>
+    I am Vaishnavi Wasule, a passionate student from Symbiosis Institute of technology.I enjoy building websites and learning new skills to grow as a developer.I am currently learning the fundamentals and working on developing my skills in areas like programming, problem-solving, and project development. I am enthusiastic about building real-world solutions and expanding my knowledge step by step.As a first year undergraduate student driven by curiosity and a desire to grow. I aim to build a strong foundation in my field while actively seeking opportunities to learn, create, and contribute. I believe in continuous improvement and look forward to shaping my future through knowledge and experience.
+  </p>
+</section>
+
+<section id="projects" class="glass fade-in">
+  <h3>My Projects</h3>
+  <div class="projects-grid">
+    <div class="card">
+      <h4>Image Gallery</h4>
+      <p>Interactive gallery with lightbox effect <br>📸Developed an interactive image gallery website featuring a lightbox effect for enhanced user experience. Through this project, I learned how to handle DOM manipulation, implement event-driven programming, and improve UI/UX design. It also helped me understand responsive layouts and efficient image handling techniques..</p>
+    </div>
+
+    <div class="card">
+      <h4>Travel Blog</h4>
+      <p>Showcasing destinations & experiences.<br>
+🌍 Travel Blog Website Created a travel blog website to showcase destinations, stories, and experiences. This project helped me strengthen my skills in structuring web pages using HTML and CSS, organizing content effectively, and designing visually appealing layouts. I also learned the importance of user-friendly navigation and content presentation.</p>
+    </div>
+
+    <div class="card">
+      <h4>Shopping Website</h4><br>
+      <p>Basic e-commerce UI with cart system.🛒 Shopping Website Built a basic shopping website with product listings and a simple cart interface. Through this project, I gained experience in integrating frontend components, managing user interactions, and understanding the fundamentals of e-commerce workflows. It also improved my problem-solving skills and knowledge of website functionality.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="glass fade-in contact">
+  <h3>Contact Me</h3>
+  <p>Email: vaishnavi21@gmail.com</p>
+  <p>Phone: 9685421478</p>
+</section>
+
+<footer>
+  <p>© 2026 Vaishnavi Wasule</p>
+</footer>
+
+<script>
+// Typing effect
+const text = "Aspiring Developer | Creative Thinker";
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 80);
+  }
+}
+type();
+
+// Scroll button
+function scrollToSection() {
+  document.getElementById("projects").scrollIntoView({behavior: "smooth"});
+}
+
+// Fade-in animation on scroll
+const faders = document.querySelectorAll(".fade-in");
+
+window.addEventListener("scroll", () => {
+  faders.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
